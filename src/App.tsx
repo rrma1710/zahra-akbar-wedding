@@ -489,7 +489,7 @@ const App = () => {
               <img src={groomImage} alt={content.couple.groom.name} className="w-full h-full object-cover transition-all duration-700" />
               <div className="absolute inset-0 border-[12px] border-white/10 pointer-events-none"></div>
             </div>
-            <h3 className="text-[23px] text-burgundy mb-2 italic whitespace-nowrap leading-tight">{content.couple.groom.name}</h3>
+            <h3 className="text-[20px] text-burgundy mb-2 italic whitespace-nowrap leading-tight">{content.couple.groom.name}</h3>
             {/* <span className="text-[10px] font-semibold tracking-[0.3em] text-sage mb-6">THE GROOM</span> */}
             <p className="text-charcoal/70 text-sm leading-relaxed max-w-xs">
               {content.couple.groom.parents}
