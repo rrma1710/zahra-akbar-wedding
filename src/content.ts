@@ -59,7 +59,7 @@ export const defaultContent: SiteContent = {
       parents: 'Putri dari Bpk. Nanang Ishariyanto & Ibu. Dina Siana Indri Astutik',
     },
     groom: {
-      name: 'R. Rojab Maulana Akbar, S.Kom., Gr.',
+      name: 'R. Rojab Maulana Akbar, S.Kom, Gr.',
       parents: 'Putra dari Bpk. RB. Abdul Hadi & Ibu Husnul Hotimah',
     },
   },
