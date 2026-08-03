@@ -536,10 +536,10 @@ const App = () => {
             className="bg-white border border-charcoal/5 p-8 flex flex-col items-center text-center shadow-sm md:mt-24"
           >
             <div className="w-full aspect-[4/5] overflow-hidden mb-6 group relative">
-              <img src={groomImage} alt={content.couple.groom.name} className="w-full h- object-cover transition-all duration-700" />
+              <img src={groomImage} alt={content.couple.groom.name} className="w-full h-full object-cover transition-all duration-700" />
               <div className="absolute inset-0 border-[12px] border-white/10 pointer-events-none"></div>
             </div>
-            <ResponsiveSingleLineName minFontSize={7} maxFontSize={24}>
+            <ResponsiveSingleLineName minFontSize={12} maxFontSize={22}>
               {content.couple.groom.name}
             </ResponsiveSingleLineName>
             {/* <span className="text-[10px] font-semibold tracking-[0.3em] text-sage mb-6">THE GROOM</span> */}
