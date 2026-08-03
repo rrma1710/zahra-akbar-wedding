@@ -35,6 +35,7 @@ type TimeLeft = {
   seconds: number;
 };
 
+
 const calculateTimeLeft = (targetDate: Date): TimeLeft => {
   const difference = targetDate.getTime() - Date.now();
 
