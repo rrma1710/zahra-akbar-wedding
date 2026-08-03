@@ -104,7 +104,7 @@ export const InvitationPopup = ({
                         animate={{ scale: 1, opacity: 1, y: 0 }}
                         exit={{ scale: 0.85, opacity: 0, y: 30 }}
                         transition={{ duration: 0.45, type: 'spring', stiffness: 280, damping: 28 }}
-                        className="relative w-full max-w-2xl bg-linear-to-b from-champagne/95 via-white/95 to-blue-200 backdrop-blur-md rounded-2xl p-0 shadow-2xl border border-white/80 overflow-y-auto overflow-x-hidden max-h-[86vh]"
+                        className="relative w-[min(100%,42rem)] max-h-[calc(100svh-1.5rem)] bg-linear-to-b from-champagne/95 via-white/95 to-blue-200 backdrop-blur-md rounded-2xl p-0 shadow-2xl border border-white/80 overflow-hidden"
                     >
                         {/* Decorative elements */}
                         <motion.div
@@ -125,42 +125,42 @@ export const InvitationPopup = ({
 
                         {/* Content (right column on desktop) */}
                         <div className="grid grid-cols-1 md:grid-cols-2">
-                            <div className="relative overflow-hidden rounded-t-2xl md:rounded-l-2xl h-72 sm:h-72 md:h-auto md:min-h-75">
+                            <div className="relative overflow-hidden rounded-t-2xl md:rounded-l-2xl h-[28svh] sm:h-64 md:h-auto md:min-h-75">
                                 <motion.div initial={{ scale: 1.05 }} animate={{ scale: 1 }} transition={{ duration: 1.6, ease: 'easeOut' }} className="absolute inset-0 bg-cover transform-gpu" style={{ backgroundImage: `url(${content.photos.hero || bgHero})`, backgroundPosition: 'center 15%' }} />
                                 <div className="absolute inset bg-linear-to-b from-transparent via-white/40 to-white/80 mix-blend-overlay" />
                             </div>
 
-                            <div className="relative z-10 px-4 sm:px-6 py-5 sm:py-6 flex flex-col justify-center">
+                            <div className="relative z-10 px-4 sm:px-6 py-4 sm:py-6 flex flex-col justify-center gap-2 sm:gap-0">
                                 {/* Header */}
                                 <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15, duration: 0.5 }} className="text-center">
                                     <div className="mx-auto w-full max-w-lg">
-                                        <div className="flex items-center justify-center mb-1.5">
+                                        <div className="flex items-center justify-center mb-1">
                                             <Heart size={22} className="text-burgundy fill-burgundy" />
                                         </div>
-                                        <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif text-burgundy leading-tight">{content.couple.shortName}</h1>
-                                        <p className="mt-1 text-[10px] sm:text-xs tracking-[0.16em] font-semibold text-black uppercase">Dengan Penuh Rasa Syukur & Kehormatan</p>
+                                        <h1 className="text-[clamp(1.2rem,4.6vw,2.25rem)] font-serif text-burgundy leading-tight">{content.couple.shortName}</h1>
+                                        <p className="mt-1 text-[9px] sm:text-xs tracking-[0.16em] font-semibold text-black uppercase">Dengan Penuh Rasa Syukur & Kehormatan</p>
                                     </div>
                                 </motion.div>
 
-                                <motion.div initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ delay: 0.35, duration: 0.6 }} className="h-px bg-linear-to-r from-transparent via-burgundy/40 to-transparent my-4" />
+                                <motion.div initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ delay: 0.35, duration: 0.6 }} className="h-px bg-linear-to-r from-transparent via-burgundy/40 to-transparent my-3 sm:my-4" />
 
                                 <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45, duration: 0.5 }} className="text-center px-1 sm:px-3">
                                     {guestName && (
-                                        <div className="mb-2">
+                                        <div className="mb-1 sm:mb-2">
                                             <p className="text-[10px] sm:text-xs tracking-[0.16em] font-semibold text-charcoal/60 uppercase">Kepada Yth.</p>
-                                            <p className="text-base sm:text-lg font-serif font-semibold text-burgundy">{guestName}</p>
+                                            <p className="text-sm sm:text-lg font-serif font-semibold text-burgundy">{guestName}</p>
                                         </div>
                                     )}
-                                    <p className="text-xs sm:text-sm italic leading-relaxed text-black max-w-xl mx-auto">{content.texts.popupGreeting}</p>
-                                    <div className="mt-2">
+                                    <p className="text-[11px] sm:text-sm italic leading-snug sm:leading-relaxed text-black max-w-xl mx-auto">{content.texts.popupGreeting}</p>
+                                    <div className="mt-1 sm:mt-2">
                                         <p className="font-semibold text-sm sm:text-base text-burgundy">Pernikahan Kami</p>
-                                        <p className="text-lg text-black font-bold" style={{ WebkitTextStroke: '3px white', paintOrder: 'stroke' }}>{content.wedding.dateLabel}</p>
+                                        <p className="text-base sm:text-lg text-black font-bold" style={{ WebkitTextStroke: '3px white', paintOrder: 'stroke' }}>{content.wedding.dateLabel}</p>
                                     </div>
                                 </motion.div>
 
-                                <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.65, duration: 0.5 }} className="pt-4">
+                                <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.65, duration: 0.5 }} className="pt-3 sm:pt-4">
                                     <div className="flex items-center justify-center">
-                                        <motion.button initial={{ opacity: 0, scale: 0.96 }} whileInView={{ opacity: 1, scale: 1 }} whileHover={{ scale: 1.02, boxShadow: '0 18px 45px rgba(99,13,22,0.22)' }} whileTap={{ scale: 0.975 }} onClick={() => { onOpenAndPlay?.(); const audio = audioRef.current; if (audio) { audio.muted = false; void audio.play().catch(() => { }); } }} type="button" className="w-full max-w-md bg-linear-to-r from-burgundy to-burgundy/80 text-white px-4 py-2.5 tracking-[0.12em] text-xs sm:text-sm font-semibold transition-all uppercase rounded-xl flex items-center justify-center gap-2">
+                                        <motion.button initial={{ opacity: 0, scale: 0.96 }} whileInView={{ opacity: 1, scale: 1 }} whileHover={{ scale: 1.02, boxShadow: '0 18px 45px rgba(99,13,22,0.22)' }} whileTap={{ scale: 0.975 }} onClick={() => { onOpenAndPlay?.(); const audio = audioRef.current; if (audio) { audio.muted = false; void audio.play().catch(() => { }); } }} type="button" className="w-full max-w-md bg-linear-to-r from-burgundy to-burgundy/80 text-white px-4 py-2 sm:py-2.5 tracking-[0.12em] text-xs sm:text-sm font-semibold transition-all uppercase rounded-xl flex items-center justify-center gap-2">
                                             <span>Buka Undangan</span>
                                         </motion.button>
                                     </div>

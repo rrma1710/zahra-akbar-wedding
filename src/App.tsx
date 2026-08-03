@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import {
   Music,
@@ -88,6 +88,51 @@ const SectionTitle = ({ overline, title, description, icon: Icon }: any) => (
     {description && <p className="text-charcoal/70 max-w-lg mx-auto italic">{description}</p>}
   </motion.div>
 );
+
+const ResponsiveSingleLineName = ({ children }: { children: string }) => {
+  const headingRef = useRef<HTMLHeadingElement>(null);
+
+  useLayoutEffect(() => {
+    const heading = headingRef.current;
+    const wrapper = heading?.parentElement;
+
+    if (!heading || !wrapper) return;
+
+    const minFontSize = 10;
+    const maxFontSize = 28;
+
+    const fitText = () => {
+      let fontSize = maxFontSize;
+      heading.style.fontSize = `${fontSize}px`;
+      heading.style.whiteSpace = 'nowrap';
+
+      while (fontSize > minFontSize && heading.scrollWidth > wrapper.clientWidth) {
+        fontSize -= 0.5;
+        heading.style.fontSize = `${fontSize}px`;
+      }
+    };
+
+    fitText();
+
+    const observer = new ResizeObserver(() => fitText());
+    observer.observe(wrapper);
+    window.addEventListener('resize', fitText);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('resize', fitText);
+    };
+  }, [children]);
+
+  return (
+    <h3
+      ref={headingRef}
+      className="w-full max-w-full text-burgundy mb-2 italic leading-tight whitespace-nowrap text-center overflow-hidden"
+    >
+      {children}
+    </h3>
+  );
+};
 
 const CountdownItem = ({ label, value }: { label: string, value: number }) => (
   <div className="bg-white/90 backdrop-blur-sm p-3 sm:p-4 border border-charcoal/10 min-w-[70px] sm:min-w-[80px] rounded-lg shadow-sm">
@@ -472,7 +517,7 @@ const App = () => {
               <img src={brideImage} alt={content.couple.bride.name} className="w-full h-full object-cover transition-all duration-700" />
               <div className="absolute inset-0 border-[12px] border-white/10 pointer-events-none"></div>
             </div>
-            <h3 className="text-3xl text-burgundy mb-2 italic">{content.couple.bride.name}</h3>
+            <ResponsiveSingleLineName>{content.couple.bride.name}</ResponsiveSingleLineName>
             {/* <span className="text-[10px] font-semibold tracking-[0.3em] text-sage mb-6">THE BRIDE</span> */}
             <p className="text-charcoal/70 text-sm leading-relaxed max-w-xs">
               {content.couple.bride.parents}
@@ -489,7 +534,7 @@ const App = () => {
               <img src={groomImage} alt={content.couple.groom.name} className="w-full h-full object-cover transition-all duration-700" />
               <div className="absolute inset-0 border-[12px] border-white/10 pointer-events-none"></div>
             </div>
-            <h3 className="text-[20px] text-burgundy mb-2 italic whitespace-nowrap leading-tight">{content.couple.groom.name}</h3>
+            <ResponsiveSingleLineName>{content.couple.groom.name}</ResponsiveSingleLineName>
             {/* <span className="text-[10px] font-semibold tracking-[0.3em] text-sage mb-6">THE GROOM</span> */}
             <p className="text-charcoal/70 text-sm leading-relaxed max-w-xs">
               {content.couple.groom.parents}
