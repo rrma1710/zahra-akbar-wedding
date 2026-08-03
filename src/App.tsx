@@ -539,7 +539,7 @@ const App = () => {
               <img src={groomImage} alt={content.couple.groom.name} className="w-full h-full object-cover transition-all duration-700" />
               <div className="absolute inset-0 border-[12px] border-white/10 pointer-events-none"></div>
             </div>
-            <ResponsiveSingleLineName minFontSize={8} maxFontSize={18}>
+            <ResponsiveSingleLineName minFontSize={6} maxFontSize={16}>
               {content.couple.groom.name}
             </ResponsiveSingleLineName>
             {/* <span className="text-[10px] font-semibold tracking-[0.3em] text-sage mb-6">THE GROOM</span> */}
