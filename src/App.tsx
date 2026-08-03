@@ -24,7 +24,7 @@ import { InvitationPopup } from './components/InvitationPopup';
 import { useContent } from './hooks/useContent';
 import song from './song.mp3';
 import bgHero from "./foto/bg/bg.jpg";
-import fotoAkbar from './foto/assets/f_akbar.jpg';
+// import fotoAkbar from './foto/assets/f_akbar.jpg';
 import fotoZahra from './foto/assets/f_zahra.jpg';
 
 // --- Constants & Assets ---
