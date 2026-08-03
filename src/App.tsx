@@ -26,6 +26,7 @@ import song from './song.mp3';
 import bgHero from "./foto/bg/bg.jpg";
 import fotoAkbar from './foto/assets/f_akbar.jpg';
 import fotoZahra from './foto/assets/f_zahra.jpg';
+import journey1 from './foto/journey/1.jpg';
 
 // --- Constants & Assets ---
 type TimeLeft = {
@@ -57,7 +58,7 @@ const IMAGES = {
   clara: fotoZahra,
   elias: fotoAkbar,
   journey: [
-    "https://drive.google.com/file/d/1iZm8SA2Xgwcjj6Jp97_Bs8DwmPbwhig_/view?usp=sharing",
+    journey1,
     "https://lh3.googleusercontent.com/aida-public/AB6AXuBadBzr_19WoT6CcJskQ4hhNbQu_2t_7ADEqzIinJ6hsCphI12tVmri9bScSCrCKuv4nHqoiL24WHMpIEhXWDPSIlJE9WkaH4aR8s0-VRKHMDPnhtBIc0dqrXJL-c_RfCkvgqZ3z1XvwUT3xlIVSYtFhtfod3ZS0GgJehp2UG2-aSe12lQddB6pv--khOlY0sQU1IMBYPmxxNpmJPmtlWgBt3ambYjBQXe3SWGmLnNvt1FTeFPVO17fkYYCe7jkd4PCUajRV-uVqBM",
     "https://lh3.googleusercontent.com/aida-public/AB6AXuAjDh6Z5W2IIWoLyB_sziT4skfTRuIWyG9ANqIIB-FQ6Z0wP5fiH5xVLF1q38_0GxixICgkOZShX2qpJAaryVh071-3HvXUu6owRhLK2zQ5TX2Pidj7CS3VqFKxyRBUAaEyeAPRX13hhMzr_YI3x0HuEDEPWz75lIulQE9yH9rfTo5eszgsEjs9yWAYf52dZ5TzGL8fSHWYYVN4lF0px4sIbf7UR8nIzwiElWvfP3GSNHUq9Ggg5p-sJ_BBwsHJJYrgsnUCkXEkqyQ",
     "https://lh3.googleusercontent.com/aida-public/AB6AXuBVPUj1F0Z4fd3FyL5GfgRWWsfMHXdNY7yln_gHOVknA9FXKz_CqSP10f5JoSZ3gtFG1OmZvif4R1FSbcxhhjXNwYhyMmgZafad1S_tlkzy_BfYKewslX-zP6rKpWRnhp9ogb339ChaceTASaz3-oUhb1Tt7l57n94AKDPSVOBn8427bCxPtEyXfMgoeGPnVFWZpQhS8fwODYdP3QC1MXYTkarCuyxKv5e79vi2tdjjMP8Zf8xwa7M7KHEq-erooxFyxPRMmZzDC0A",
