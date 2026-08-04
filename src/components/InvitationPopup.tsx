@@ -147,7 +147,8 @@ export const InvitationPopup = ({
                                 <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45, duration: 0.5 }} className="text-center px-1 sm:px-3">
                                     {guestName && (
                                         <div className="mb-1 sm:mb-2">
-                                            <p className="text-[10px] sm:text-xs tracking-[0.16em] font-semibold text-charcoal/60 uppercase">Kepada Yth.</p>
+                                            <p className="text-[10px] sm:text-xs tracking-[0.16em] font-semibold text-charcoal/60">Kepada Yth.</p>
+                                            <p className="text-[10px] sm:text-xs tracking-[0.16em] font-semibold text-charcoal/60">Bapak/Ibu/Saudara/i</p>
                                             <p className="text-sm sm:text-lg font-serif font-semibold text-burgundy">{guestName}</p>
                                         </div>
                                     )}

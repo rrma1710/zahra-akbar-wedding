@@ -27,6 +27,11 @@ import bgHero from "./foto/bg/bg.jpg";
 import fotoAkbar from './foto/assets/f_akbar.jpg';
 import fotoZahra from './foto/assets/f_zahra.jpg';
 import journey1 from './foto/journey/1.jpg';
+import journey2 from './foto/journey/2.jpg';
+import journey3 from './foto/journey/3.jpg';
+import journey4 from './foto/journey/4.jpg';
+import journey5 from './foto/journey/5.jpg';
+import journey6 from './foto/journey/6.jpg';
 
 // --- Constants & Assets ---
 type TimeLeft = {
@@ -59,11 +64,11 @@ const IMAGES = {
   elias: fotoAkbar,
   journey: [
     journey1,
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuBadBzr_19WoT6CcJskQ4hhNbQu_2t_7ADEqzIinJ6hsCphI12tVmri9bScSCrCKuv4nHqoiL24WHMpIEhXWDPSIlJE9WkaH4aR8s0-VRKHMDPnhtBIc0dqrXJL-c_RfCkvgqZ3z1XvwUT3xlIVSYtFhtfod3ZS0GgJehp2UG2-aSe12lQddB6pv--khOlY0sQU1IMBYPmxxNpmJPmtlWgBt3ambYjBQXe3SWGmLnNvt1FTeFPVO17fkYYCe7jkd4PCUajRV-uVqBM",
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuAjDh6Z5W2IIWoLyB_sziT4skfTRuIWyG9ANqIIB-FQ6Z0wP5fiH5xVLF1q38_0GxixICgkOZShX2qpJAaryVh071-3HvXUu6owRhLK2zQ5TX2Pidj7CS3VqFKxyRBUAaEyeAPRX13hhMzr_YI3x0HuEDEPWz75lIulQE9yH9rfTo5eszgsEjs9yWAYf52dZ5TzGL8fSHWYYVN4lF0px4sIbf7UR8nIzwiElWvfP3GSNHUq9Ggg5p-sJ_BBwsHJJYrgsnUCkXEkqyQ",
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuBVPUj1F0Z4fd3FyL5GfgRWWsfMHXdNY7yln_gHOVknA9FXKz_CqSP10f5JoSZ3gtFG1OmZvif4R1FSbcxhhjXNwYhyMmgZafad1S_tlkzy_BfYKewslX-zP6rKpWRnhp9ogb339ChaceTASaz3-oUhb1Tt7l57n94AKDPSVOBn8427bCxPtEyXfMgoeGPnVFWZpQhS8fwODYdP3QC1MXYTkarCuyxKv5e79vi2tdjjMP8Zf8xwa7M7KHEq-erooxFyxPRMmZzDC0A",
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuAt98RS9YRuT2tKOFIO56cw-j2N8cS6Z-OuP60Bi9KQX3wn98iXzNpjS2aoaXpxJomAo4aZM14KkXK4ZY4o2plN7WXPOzu0v52YtwIskWjhonxeibR-48kfKGPY2mF8J0ko6-xmq8RweR2-3C9xJiXNWzw_tCj6q3G54LLq3pc1UJChvEjuhVM2kIcMEyeHyqQ4KA3JhyahvlILMzWjF57ZJVa2KW7BNhxeSGJ215eNy1RbzC1nok7tj84wY1B5fsHKQg1gCUNEnHM",
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuA-JU3Vaf3Ih6LGAZZitlQKwkA6xkmazLDghKShE7qZqvs0whS6GRoFSpIFu8y68bmeTPeBsXRheK6voKxmpHLvvPKNml33GHJmEourlgmf0QWGVa4rHEM-DMz4gU_XQ0z-hhVzfn-miq4XxzF1dvp7LovyY5PWoa7q3TvXCe1ST1lPwHcMX9z9ty_Pit3U9RoRGnzoHlT3yek71UxTZvtDigPiF78XtS6AI9LIi11Fc0kF8hEF5n4aKgkmW8hdOQnMFaIUVE8ycfQ"
+    journey2,
+    journey3,
+    journey4,
+    journey5,
+    journey6
   ],
   akad: "https://lh3.googleusercontent.com/aida-public/AB6AXuAqAKfkxKVS2_JPB7vykax3ylTx7unets4tZ46_ZGZicM3mIu0RjEoh75B8BoFchlANkVfExtE0uM0PZi56sCGyONfK-eHmP2xTTbK0d9vAjaqFiYWVWLesG0yQ6uV9ogPifbHSiFKZr7BQbrjwOXZSlEilsWFzDxzONNj80-Rbu4KrOJTEIBu0qo8PWS4Wsix4htOdkZ2GaWwqj_S3R6Jv32pC2fvNrw4Cd_AJhCYcoFz5Y-jdRdt67L2kuX63ixTDLLCoKdvWSI8",
   resepsi: "https://lh3.googleusercontent.com/aida-public/AB6AXuCZ4YiPPTp6Tsd4BbI5XZo_eB1LNAUPyU06hh1iL1JIZugpMeRZ-5bdlqpWjyEgi3J3NmN7rOLftld3OfBGX--R4rewSrutjusSyR7o-xbcnx_WnEAu-IqyaC54ozQgQUAxfIF0vwrXI4a1jG0oMX88T-QSk0R5xkfongRoKNSB_cFA086S4hm5x5dWwtEHmW2JQTfHu13WZraVINRhXD6tfZcvLztb-cjZPxdzk23PLGyQ0caX3oPkw88MKrJLxqgvrcD7o7tVsZg",
