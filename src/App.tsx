@@ -31,7 +31,8 @@ import journey2 from './foto/journey/2.jpg';
 import journey3 from './foto/journey/3.jpg';
 import journey4 from './foto/journey/4.jpg';
 import journey5 from './foto/journey/5.jpg';
-// import journey6 from './foto/journey/60.jpg';
+import journey6 from './foto/journey/6.jpg';
+import denah from './foto/assets/denah_zahra.jpg';
 
 // --- Constants & Assets ---
 type TimeLeft = {
@@ -68,11 +69,11 @@ const IMAGES = {
     journey3,
     journey4,
     journey5,
-    // journey6
+    journey6
   ],
   akad: "https://lh3.googleusercontent.com/aida-public/AB6AXuAqAKfkxKVS2_JPB7vykax3ylTx7unets4tZ46_ZGZicM3mIu0RjEoh75B8BoFchlANkVfExtE0uM0PZi56sCGyONfK-eHmP2xTTbK0d9vAjaqFiYWVWLesG0yQ6uV9ogPifbHSiFKZr7BQbrjwOXZSlEilsWFzDxzONNj80-Rbu4KrOJTEIBu0qo8PWS4Wsix4htOdkZ2GaWwqj_S3R6Jv32pC2fvNrw4Cd_AJhCYcoFz5Y-jdRdt67L2kuX63ixTDLLCoKdvWSI8",
   resepsi: "https://lh3.googleusercontent.com/aida-public/AB6AXuCZ4YiPPTp6Tsd4BbI5XZo_eB1LNAUPyU06hh1iL1JIZugpMeRZ-5bdlqpWjyEgi3J3NmN7rOLftld3OfBGX--R4rewSrutjusSyR7o-xbcnx_WnEAu-IqyaC54ozQgQUAxfIF0vwrXI4a1jG0oMX88T-QSk0R5xkfongRoKNSB_cFA086S4hm5x5dWwtEHmW2JQTfHu13WZraVINRhXD6tfZcvLztb-cjZPxdzk23PLGyQ0caX3oPkw88MKrJLxqgvrcD7o7tVsZg",
-  map: "https://lh3.googleusercontent.com/aida-public/AB6AXuDoDKBnIlmKTGB-GTj2eogTwsAAcUcWvJwu9RbFyVBecUPdFNOUYOJG8oVTILc0xvmFTarZehN62gSyti_fvGrfrjP7aeKFJQxFFly3GXVaSymuGIM8RXAvQkvhJ1xQPIZ3PXCLZ5oz_zqK3EWIhBuaNF9i0IR_O6Tj0yKVY98BrvvRoVBb23tuEDPFQfQTdV1ffE0nTUFfEROlLkkemG-kpmpe00Ka57bevdyEP7dsD1GqqpVHBz8xb5TnpVyC15wS3F5yTEa5KSI",
+  map: denah,
   flourish: "https://lh3.googleusercontent.com/aida-public/AB6AXuBJ7dtITvrmAqSOMTrPrGvZLzesgfqRCwHVULN0ByXo0B_m5axUjmA_zEdQrjud_C1CD25hXEX21OtonwWAYHX1--_iRmQzRIvc9akw-2-HnqBuhBOBjpdrrEanbEGMuu-RVm7KAJAxs0iMWeSWPYUdIBTK6W60cBejsgmJcL8BA8-HTL30PE1n9eTIYRNdtH9CCpwOF3zZ9dEaAgIlR6TIeaTYrS5cT34okuO67YTtV_dN8x8ze2jAAJvhBwRDrf3zxC0lHh9YO-I"
 };
 
@@ -716,22 +717,15 @@ const App = () => {
             transition={{ duration: 0.7, ease: 'easeOut' }}
             className="relative aspect-video w-full rounded-lg overflow-hidden border border-charcoal/10 shadow-lg bg-white"
           >
-            <iframe
-              title="Google Maps Street View"
-              src={STREET_VIEW_URL}
-              className="w-full h-full"
-              loading="lazy"
-              allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+            <img src={content.googleMapsUrl || IMAGES.map} alt="Denah Lokasi" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-champagne/10 via-transparent to-transparent pointer-events-none"></div>
             <a
-              href={GOOGLE_MAPS_URL}
+              href={content.googleMapsUrl || IMAGES.map}
               target="_blank"
               rel="noreferrer"
               className="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full bg-white/90 px-5 py-2 text-[10px] font-semibold tracking-[0.3em] text-burgundy shadow-lg backdrop-blur-md transition-colors hover:bg-white"
             >
-              BUKA STREET VIEW
+              {content.googleMapsUrl ? 'BUKA STREET VIEW' : 'LIHAT DENAH'}
             </a>
           </motion.div>
         </div>
