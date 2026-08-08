@@ -27,11 +27,11 @@ import bgHero from "./foto/bg/bg.jpg";
 import fotoAkbar from './foto/assets/f_akbar.jpg';
 import fotoZahra from './foto/assets/f_zahra.jpg';
 import journey1 from './foto/journey/1.jpg';
-import journey2 from './foto/journey/2.jpg';
-import journey3 from './foto/journey/3.jpg';
-import journey4 from './foto/journey/4.jpg';
-import journey5 from './foto/journey/5.jpg';
-import journey6 from './foto/journey/6.jpg';
+// import journey2 from './foto/journey/2.jpg';
+// import journey3 from './foto/journey/3.jpg';
+// import journey4 from './foto/journey/4.jpg';
+// import journey5 from './foto/journey/5.jpg';
+// import journey6 from './foto/journey/6.jpg';
 import denah from './foto/assets/denah_zahra.jpg';
 
 // --- Constants & Assets ---
@@ -65,11 +65,11 @@ const IMAGES = {
   elias: fotoAkbar,
   journey: [
     journey1,
-    journey2,
-    journey3,
-    journey4,
-    journey5,
-    journey6
+    // journey2,
+    // journey3,
+    // journey4,
+    // journey5,
+    // journey6
   ],
   akad: "https://lh3.googleusercontent.com/aida-public/AB6AXuAqAKfkxKVS2_JPB7vykax3ylTx7unets4tZ46_ZGZicM3mIu0RjEoh75B8BoFchlANkVfExtE0uM0PZi56sCGyONfK-eHmP2xTTbK0d9vAjaqFiYWVWLesG0yQ6uV9ogPifbHSiFKZr7BQbrjwOXZSlEilsWFzDxzONNj80-Rbu4KrOJTEIBu0qo8PWS4Wsix4htOdkZ2GaWwqj_S3R6Jv32pC2fvNrw4Cd_AJhCYcoFz5Y-jdRdt67L2kuX63ixTDLLCoKdvWSI8",
   resepsi: "https://lh3.googleusercontent.com/aida-public/AB6AXuCZ4YiPPTp6Tsd4BbI5XZo_eB1LNAUPyU06hh1iL1JIZugpMeRZ-5bdlqpWjyEgi3J3NmN7rOLftld3OfBGX--R4rewSrutjusSyR7o-xbcnx_WnEAu-IqyaC54ozQgQUAxfIF0vwrXI4a1jG0oMX88T-QSk0R5xkfongRoKNSB_cFA086S4hm5x5dWwtEHmW2JQTfHu13WZraVINRhXD6tfZcvLztb-cjZPxdzk23PLGyQ0caX3oPkw88MKrJLxqgvrcD7o7tVsZg",
