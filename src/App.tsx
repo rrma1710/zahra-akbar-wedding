@@ -27,8 +27,8 @@ import bgHero from "./foto/bg/bg.jpg";
 import fotoAkbar from './foto/assets/f_akbar.jpg';
 import fotoZahra from './foto/assets/f_zahra.jpg';
 import journey1 from './foto/journey/1.jpg';
-// import journey2 from './foto/journey/2.jpg';
-// import journey3 from './foto/journey/3.jpg';
+import journey2 from './foto/journey/2.jpg';
+import journey3 from './foto/journey/3.jpg';
 // import journey4 from './foto/journey/4.jpg';
 // import journey5 from './foto/journey/5.jpg';
 // import journey6 from './foto/journey/6.jpg';
@@ -65,8 +65,8 @@ const IMAGES = {
   elias: fotoAkbar,
   journey: [
     journey1,
-    // journey2,
-    // journey3,
+    journey2,
+    journey3,
     // journey4,
     // journey5,
     // journey6
@@ -715,18 +715,22 @@ const App = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="relative aspect-video w-full rounded-lg overflow-hidden border border-charcoal/10 shadow-lg bg-white"
+            className="w-full"
           >
-            <img src={content.googleMapsUrl || IMAGES.map} alt="Denah Lokasi" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-champagne/10 via-transparent to-transparent pointer-events-none"></div>
-            <a
-              href={content.googleMapsUrl || IMAGES.map}
-              target="_blank"
-              rel="noreferrer"
-              className="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full bg-white/90 px-5 py-2 text-[10px] font-semibold tracking-[0.3em] text-burgundy shadow-lg backdrop-blur-md transition-colors hover:bg-white"
-            >
-              {content.googleMapsUrl ? 'BUKA STREET VIEW' : 'LIHAT DENAH'}
-            </a>
+            <div className="relative w-full rounded-lg overflow-hidden border border-charcoal/10 shadow-lg bg-white">
+              <img src={IMAGES.map} alt="Denah Lokasi" className="w-full h-auto object-contain" />
+              <div className="absolute inset-0 bg-gradient-to-t from-champagne/10 via-transparent to-transparent pointer-events-none"></div>
+            </div>
+            <div className="flex justify-center mt-6">
+              <a
+                href={content.googleMapsUrl || IMAGES.map}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full bg-burgundy text-white px-6 py-3 text-[10px] font-semibold tracking-[0.3em] shadow-lg transition-colors hover:bg-burgundy/90 flex items-center gap-2 uppercase"
+              >
+                <MapPin size={14} /> BUKA MAPS
+              </a>
+            </div>
           </motion.div>
         </div>
       </motion.section>
