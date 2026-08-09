@@ -28,10 +28,10 @@ import fotoAkbar from './foto/assets/f_akbar.jpg';
 import fotoZahra from './foto/assets/f_zahra.jpg';
 import journey1 from './foto/journey/1.jpg';
 import journey2 from './foto/journey/2.jpg';
-import journey3 from './foto/journey/3.jpg';
-// import journey4 from './foto/journey/4.jpg';
-// import journey5 from './foto/journey/5.jpg';
-// import journey6 from './foto/journey/6.jpg';
+// import journey3 from './foto/journey/3.jpg';
+// // import journey4 from './foto/journey/4.jpg';
+// // import journey5 from './foto/journey/5.jpg';
+// // import journey6 from './foto/journey/6.jpg';
 import denah from './foto/assets/denah_zahra.jpg';
 
 // --- Constants & Assets ---
@@ -66,7 +66,7 @@ const IMAGES = {
   journey: [
     journey1,
     journey2,
-    journey3,
+    // journey3,
     // journey4,
     // journey5,
     // journey6
