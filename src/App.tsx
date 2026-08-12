@@ -79,7 +79,7 @@ const IMAGES = {
 
 // const STREET_VIEW_URL = 'https://www.google.com/maps/embed?pb=!4v1779045813382!6m8!1m7!1syO45pioB4D_DIrt83N5yaQ!2m2!1d-7.798259013961403!2d113.33984550379!3f84.36468!4f0!5f0.7820865974627469';
 const STREET_VIEW_URL = 'https://www.google.com/maps/embed?pb=!4v1785063997380!6m8!1m7!1sVoAT13O5XLXXNcLgjEj1Ag!2m2!1d-7.821673148065926!2d113.3508976046746!3f285.29968996855814!4f-0.14000581029748105!5f0.6787317039382483';
-const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/GRc7AG6ZwL4xyS8W6';
+const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/EDybkd26oMa2gCdb7?g';
 const NAV_SECTION_IDS = ['home', 'couple', 'event', 'gallery', 'rsvp', 'gifts'] as const;
 
 // --- Helper Components ---
