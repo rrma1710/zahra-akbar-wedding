@@ -18,7 +18,8 @@ import {
   Check,
   Church,
   PartyPopper,
-  HomeIcon
+  HomeIcon,
+  House
 } from 'lucide-react';
 import { InvitationPopup } from './components/InvitationPopup';
 import { useContent } from './hooks/useContent';
@@ -596,7 +597,7 @@ const App = () => {
               viewport={{ once: false, amount: 0.12 }}
               transition={{ delay: 0.2, duration: 0.55 }}
             >
-              <Church className="text-burgundy mb-4" size={40} />
+              <House className="text-burgundy mb-4" size={40} />
             </motion.div>
             <h3 className="text-2xl text-burgundy mb-4 italic">Akad Nikah</h3>
             <p className="text-sm text-charcoal/60 mb-8 max-w-xs italic">{content.texts.akadDescription}</p>
