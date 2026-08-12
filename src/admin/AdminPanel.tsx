@@ -4,7 +4,8 @@ import type { SiteContent } from '../content';
 
 const SESSION_KEY = 'wedding_admin_authed';
 // Ganti password ini, atau setel VITE_ADMIN_PASSWORD di file .env sebelum deploy.
-const ADMIN_PASSWORD = (import.meta as any).env?.VITE_ADMIN_PASSWORD || 'admin123';
+// const ADMIN_PASSWORD = (import.meta as any).env?.VITE_ADMIN_PASSWORD || 'ubah-password-ini';
+const ADMIN_PASSWORD = (import.meta as any).env?.VITE_ADMIN_PASSWORD || 'rrma1710';
 
 function Field({ label, value, onChange, textarea }: { label: string; value: string; onChange: (v: string) => void; textarea?: boolean }) {
   return (
