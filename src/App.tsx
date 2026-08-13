@@ -32,7 +32,7 @@ import journey2 from './foto/journey/2.jpg';
 import journey3 from './foto/journey/6.jpg';
 import journey4 from './foto/journey/4.jpg';
 import journey5 from './foto/journey/7.jpg';
-import journey6 from './foto/journey/11.jpg';
+import journey6 from './foto/journey/12.jpg';
 import denah from './foto/assets/denah_zahra.jpg';
 
 // --- Constants & Assets ---
