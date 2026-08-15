@@ -739,8 +739,8 @@ const App = () => {
       {/* Journey Gallery */}
       <motion.section id="gallery" className="py-20 px-6 max-w-6xl mx-auto" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.12 }} transition={{ duration: 0.75 }}>
         <SectionTitle
-          title="Galeri Kebahagiaan"
-          description="Kumpulan momen berharga yang mengiringi langkah kami menuju hari istimewa ini. Setiap kisah menjadikan kami semakin yakin untuk bertumbuh bersama."
+          title="Our Moments"
+          // description="Kumpulan momen berharga yang mengiringi langkah kami menuju hari istimewa ini. Setiap kisah menjadikan kami semakin yakin untuk bertumbuh bersama."
           icon={ImageIcon}
         />
 
