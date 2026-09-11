@@ -77,7 +77,7 @@ export const defaultContent: SiteContent = {
     locationName: 'Kediaman Mempelai Wanita',
     address: 'Dusun Gading, RT 16/RW 05, Desa Wonorejo, Kec. Maron, Kab. Probolinggo',
   },
-  googleMapsUrl: 'https://maps.app.goo.gl/EDybkd26oMa2gCdb7?g',
+  googleMapsUrl: 'https://maps.app.goo.gl/ZnoezqkSnf9gDmpx9',
   photos: {
     hero: '', // dikosongkan = pakai foto bawaan (import lokal) di App.tsx
     bride: '',

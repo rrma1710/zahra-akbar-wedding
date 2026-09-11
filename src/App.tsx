@@ -605,7 +605,7 @@ const App = () => {
             <div className="space-y-6 mb-8 w-full">
               <div>
                 <span className="text-[10px] font-semibold text-sage tracking-widest block mb-1">TANGGAL & WAKTU</span>
-                <p className="font-semibold">{content.wedding.dateLabel}</p>
+                <p className="font-semibold">{"Sabtu, 05 September 2026"}</p>
                 <p className="text-sm">{content.akad.time}</p>
               </div>
               <div>
