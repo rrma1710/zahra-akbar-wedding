@@ -54,21 +54,21 @@ export interface SiteContent {
 export const defaultContent: SiteContent = {
   couple: {
     shortName: 'Zahra & Akbar',
-    bride: {
+    groom: {
       name: 'Zahra Ifakornelia',
       parents: 'Putri dari Bpk. Nanang Ishariyanto & Ibu. Dina Siana Indri Astutik',
     },
-    groom: {
+    bride: {
       name: 'R. Rojab Maulana Akbar, S.Kom., Gr.',
       parents: 'Putra dari Bpk. RB. Abdul Hadi & Ibu Husnul Hotimah',
     },
   },
   wedding: {
-    dateLabel: 'Sabtu, 05 September 2026',
-    dateISO: '2026-09-05T09:00:00+07:00',
+    dateLabel: 'Minggu, 20 September 2026',
+    dateISO: '2026-09-20T10:00:00+07:00',
   },
   akad: {
-    time: '09 : 00 WIB',
+    time: 'SELESAI',
     locationName: 'Kediaman Mempelai Wanita',
     address: 'Dusun Gading, RT 16/RW 05, Desa Wonorejo, Kec. Maron, Kab. Probolinggo',
   },
