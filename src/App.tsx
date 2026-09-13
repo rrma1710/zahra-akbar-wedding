@@ -678,8 +678,8 @@ const App = () => {
               </div>
               <div>
                 <span className="text-[10px] font-semibold text-sage tracking-widest block mb-1">LOKASI</span>
-                 <p className="font-semibold">{content.resepsi.locationName}</p>
-                <p className="text-xs text-charcoal/60 px-4">{content.resepsi.address}</p>
+                 <p className="font-semibold">{'Kediaman Mempelai Pria'} </p>
+                <p className="text-xs text-charcoal/60 px-4">{'Dusun Gapur, RT 07 / RW 03,\n Desa Brumbungan Lor, Kec. Gending, Kab. Probolinggo'}</p>
               </div>
             </div>
 
