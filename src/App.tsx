@@ -626,14 +626,14 @@ const App = () => {
               <img src={IMAGES.akad} alt="Venue" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
             </motion.div> */}
 
-            <a
+            {/* <a
               href={content.googleMapsUrl}
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 border border-burgundy text-burgundy text-[10px] px-6 py-3 tracking-widest font-semibold hover:bg-burgundy/5 transition-all uppercase"
             >
               <MapPin size={14} /> Buka Maps
-            </a>
+            </a> */}
           </motion.div>
 
           {/* Resepsi */}
@@ -694,14 +694,14 @@ const App = () => {
               <img src={IMAGES.resepsi} alt="Venue" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
             </motion.div> */}
 
-            {/* <a
+            <a
               href={content.googleMapsUrl}
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 bg-burgundy text-white text-[10px] px-6 py-3 tracking-widest font-semibold hover:bg-burgundy/90 transition-all uppercase"
             >
               <MapPin size={14} /> Buka Maps
-            </a> */}
+            </a>
           </motion.div>
         </div>
 
