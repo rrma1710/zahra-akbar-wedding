@@ -521,22 +521,6 @@ const App = () => {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.12 }}
-            className="bg-white border border-charcoal/5 p-8 flex flex-col items-center text-center shadow-sm"
-          >
-            <div className="w-full aspect-[4/5] overflow-hidden mb-6 group relative">
-              <img src={brideImage} alt={content.couple.bride.name} className="w-full h-full object-cover transition-all duration-700" />
-              <div className="absolute inset-0 border-[12px] border-white/10 pointer-events-none"></div>
-            </div>
-            <ResponsiveSingleLineName>{content.couple.bride.name}</ResponsiveSingleLineName>
-            {/* <span className="text-[10px] font-semibold tracking-[0.3em] text-sage mb-6">THE BRIDE</span> */}
-            <p className="text-charcoal/70 text-sm leading-relaxed max-w-xs">
-              {content.couple.bride.parents}
-            </p>
-          </motion.div>
           
           <motion.div
             initial={{ opacity: 0, x: 30 }}
@@ -556,6 +540,24 @@ const App = () => {
               {content.couple.groom.parents}
             </p>
           </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.12 }}
+            className="bg-white border border-charcoal/5 p-8 flex flex-col items-center text-center shadow-sm"
+          >
+            <div className="w-full aspect-[4/5] overflow-hidden mb-6 group relative">
+              <img src={brideImage} alt={content.couple.bride.name} className="w-full h-full object-cover transition-all duration-700" />
+              <div className="absolute inset-0 border-[12px] border-white/10 pointer-events-none"></div>
+            </div>
+            <ResponsiveSingleLineName>{content.couple.bride.name}</ResponsiveSingleLineName>
+            {/* <span className="text-[10px] font-semibold tracking-[0.3em] text-sage mb-6">THE BRIDE</span> */}
+            <p className="text-charcoal/70 text-sm leading-relaxed max-w-xs">
+              {content.couple.bride.parents}
+            </p>
+          </motion.div>
+          
         </div>
       </motion.section>
 
