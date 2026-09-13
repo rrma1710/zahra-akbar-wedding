@@ -33,7 +33,7 @@ import journey7 from './foto/journey/10.jpg';
 import journey4 from './foto/journey/4.jpg';
 import journey5 from './foto/journey/7.jpg';
 import journey6 from './foto/journey/12.jpg';
-import denah from './foto/assets/denah_zahra.jpg';
+import denah from './foto/assets/denah_akbar.jpg';
 
 // --- Constants & Assets ---
 type TimeLeft = {
@@ -694,14 +694,14 @@ const App = () => {
               <img src={IMAGES.resepsi} alt="Venue" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
             </motion.div> */}
 
-            <a
+            {/* <a
               href={content.googleMapsUrl}
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 bg-burgundy text-white text-[10px] px-6 py-3 tracking-widest font-semibold hover:bg-burgundy/90 transition-all uppercase"
             >
               <MapPin size={14} /> Buka Maps
-            </a>
+            </a> */}
           </motion.div>
         </div>
 
