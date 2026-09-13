@@ -53,7 +53,7 @@ export interface SiteContent {
 
 export const defaultContent: SiteContent = {
   couple: {
-    shortName: 'Zahra & Akbar',
+    shortName: 'Akbar & Zahra',
     groom: {
       name: 'Zahra Ifakornelia',
       parents: 'Putri dari Bpk. Nanang Ishariyanto & Ibu. Dina Siana Indri Astutik',
