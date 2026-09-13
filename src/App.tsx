@@ -526,7 +526,7 @@ const App = () => {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.12 }}
-            className="bg-white border border-charcoal/5 p-8 flex flex-col items-center text-center shadow-sm md:mt-24"
+            className="bg-white border border-charcoal/5 p-8 flex flex-col items-center text-center shadow-sm"
           >
             <div className="w-full aspect-[4/5] overflow-hidden mb-6 group relative">
               <img src={groomImage} alt={content.couple.groom.name} className="w-full h-full object-cover transition-all duration-700" />
@@ -545,7 +545,7 @@ const App = () => {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.12 }}
-            className="bg-white border border-charcoal/5 p-8 flex flex-col items-center text-center shadow-sm"
+            className="bg-white border border-charcoal/5 p-8 flex flex-col items-center text-center shadow-sm md:mt-24"
           >
             <div className="w-full aspect-[4/5] overflow-hidden mb-6 group relative">
               <img src={brideImage} alt={content.couple.bride.name} className="w-full h-full object-cover transition-all duration-700" />
