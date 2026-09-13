@@ -160,8 +160,8 @@ const CountdownItem = ({ label, value }: { label: string, value: number }) => (
 const App = () => {
   const { content } = useContent();
   const heroImage = content.photos.hero || IMAGES.hero;
-  const brideImage = content.photos.bride || IMAGES.clara;
-  const groomImage = content.photos.groom || IMAGES.elias;
+  const brideImage = content.photos.bride || IMAGES.elias;
+  const groomImage = content.photos.groom || IMAGES.clara;
   const weddingDate = new Date(content.wedding.dateISO);
 
   const [activeTab, setActiveTab] = useState('home');

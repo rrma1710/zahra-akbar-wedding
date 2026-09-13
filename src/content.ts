@@ -54,11 +54,11 @@ export interface SiteContent {
 export const defaultContent: SiteContent = {
   couple: {
     shortName: 'Akbar & Zahra',
-    groom: {
+    bride: {
       name: 'Zahra Ifakornelia',
       parents: 'Putri dari Bpk. Nanang Ishariyanto & Ibu. Dina Siana Indri Astutik',
     },
-    bride: {
+    groom: {
       name: 'R. Rojab Maulana Akbar, S.Kom., Gr.',
       parents: 'Putra dari Bpk. RB. Abdul Hadi & Ibu Husnul Hotimah',
     },
