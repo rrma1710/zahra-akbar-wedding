@@ -859,15 +859,15 @@ const App = () => {
           </p>
           <div className="flex items-center gap-4">
             <span className="text-xl tracking-widest font-mono font-medium">
-              0713306312
+              650901012994532
             </span>
             <button
-              onClick={() => copyToClipboard('0713306312', 'bank jatim')}
+              onClick={() => copyToClipboard('650901012994532', ' BANK BRI')}
               className="p-1.5 rounded-full border border-charcoal/10 hover:bg-charcoal/5 transition-all active:scale-95"
               title="Salin Nomor Rekening"
               aria-label="Salin Nomor Rekening"
             >
-              {copiedId === 'bank jatim' ? (
+              {copiedId === 'BANK BRI' ? (
                 <Check size={14} className="text-green-600" />
               ) : (
                 <Copy size={14} />
@@ -882,7 +882,7 @@ const App = () => {
             Atas Nama
           </p>
           <p className="text-sm font-medium uppercase tracking-wider">
-            ZAHRA IFAKORNELIA
+            R. ROJAB MAULANA AKBAR
           </p>
         </div>
       </div>
@@ -896,10 +896,10 @@ const App = () => {
             description="Bagi Bapak/Ibu/Saudara/i yang ingin mengirimkan kado atau bingkisan fisik, dapat dikirimkan ke alamat kediaman kami berikut."
           />
           <div className="p-4 rounded mb-6">
-            <p className="font-semibold text-burgundy mb-2">ZAHRA IFAKORNELIA</p>
+            <p className="font-semibold text-burgundy mb-2">R. ROJAB MAULANA AKBAR</p>
             <p className="text-sm text-charcoal/70 leading-relaxed">
-            Dusun Gading, RT 16/RW 05, Desa Wonorejo <br />
-            Kec. Maron, Kab. Probolinggo
+            Dusun Gapur, RT 07/RW 03, Desa Brumbungan lor <br />
+            Kec. Gending, Kab. Probolinggo
               
             </p>
           </div>
