@@ -152,6 +152,9 @@ export const InvitationPopup = ({
                                             <p className="text-sm sm:text-lg font-serif font-semibold text-burgundy">{guestName}</p>
                                         </div>
                                     )}
+                                    {guestName && (
+                                        <p className="mb-1 text-[9px] sm:text-[10px] italic leading-snug text-charcoal/60">Keterangan: Mohon maaf apabila ada kesalahan dalam penulisan nama &amp; gelar.</p>
+                                    )}
                                     <p className="text-[11px] sm:text-sm italic leading-snug sm:leading-relaxed text-black max-w-xl mx-auto">{content.texts.popupGreeting}</p>
                                     <div className="mt-1 sm:mt-2">
                                         <p className="font-semibold text-sm sm:text-base text-burgundy">Pernikahan Kami</p>
