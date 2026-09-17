@@ -848,7 +848,7 @@ const App = () => {
             <p className="text-[10px] font-bold text-sage tracking-widest uppercase mb-1">
               TRANSFER BANK
             </p>
-            <h4 className="text-2xl text-burgundy font-extrabold">Bank Jatim</h4>
+            <h4 className="text-2xl text-burgundy font-extrabold">BANK BRI</h4>
           </div>
         </div>
 
