@@ -73,7 +73,7 @@ export const defaultContent: SiteContent = {
     address: 'Dusun Gading, RT 16/RW 05, Desa Wonorejo, Kec. Maron, Kab. Probolinggo',
   },
   resepsi: {
-    time: '11 : 00 - 14 : 00 WIB',
+    time: '10 : 00 - 14 : 00 WIB',
     locationName: 'Kediaman Mempelai Wanita',
     address: 'Dusun Gading, RT 16/RW 05, Desa Wonorejo, Kec. Maron, Kab. Probolinggo',
   },
